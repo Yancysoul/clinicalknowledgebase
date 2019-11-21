@@ -1,0 +1,1 @@
+package com.ywhk.ckb.dao.repository;import com.ywhk.ckb.dao.model.core.MedSpecEntity;import org.springframework.data.jpa.repository.JpaRepository;import java.util.List;public interface MedSpecRespository extends JpaRepository<MedSpecEntity, String> {    List<MedSpecEntity> findByFMedSpecID(Integer id);    List<MedSpecEntity> findByDirectoryID(Integer id);}

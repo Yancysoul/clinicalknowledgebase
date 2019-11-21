@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc2c2175-ff66-4d1e-b9a5-f9955ac7d4ae" name="Default Changelist" comment="">
+    <list default="true" id="fc2c2175-ff66-4d1e-b9a5-f9955ac7d4ae" name="Default Changelist" comment="增加疾病信息相关查询">
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DirectoryEntity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DiseaseListEntity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DiseaseTypeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/MedSpecEntity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DirectoryRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseListRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/MedSpecRespository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/DiseaseService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/MedicineService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/dto/DirectoryDto.java" afterDir="false" />
@@ -46,8 +48,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="56" />
-          <entry key="java" value="106" />
+          <entry key="class" value="57" />
+          <entry key="java" value="120" />
           <entry key="kt" value="1" />
           <entry key="xml" value="10" />
           <entry key="yml" value="12" />
@@ -55,8 +57,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="56" />
-          <entry key="JAVA" value="106" />
+          <entry key="CLASS" value="57" />
+          <entry key="JAVA" value="120" />
           <entry key="Kotlin" value="1" />
           <entry key="XML" value="10" />
           <entry key="YAML" value="12" />
@@ -65,16 +67,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="12" />
-          <entry key="dummy" value="31" />
-          <entry key="java" value="6057" />
+          <entry key="dummy" value="37" />
+          <entry key="java" value="7371" />
+          <entry key="txt" value="10" />
           <entry key="yml" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="12" />
-          <entry key="JAVA" value="6057" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="JAVA" value="7371" />
+          <entry key="PLAIN_TEXT" value="47" />
           <entry key="YAML" value="96" />
         </counts>
       </usages-collector>
@@ -86,13 +89,13 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5602792">
+    <splitter split-orientation="horizontal" split-proportion="0.5138086">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/impl/DiseaseServicelmpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="678">
+                <state relative-caret-position="-124">
                   <caret line="70" column="96" selection-start-line="70" selection-start-column="82" selection-end-line="70" selection-end-column="96" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -103,72 +106,46 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ckb-common/src/main/java/com/ywhk/ckb/common/http/request/BaseRequest.java">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/impl/MedicineServiceImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+                <state relative-caret-position="450">
+                  <caret line="27" column="42" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="42" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseTypeRepository.java">
+            <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/MedSpecEntity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="344">
+                  <caret line="19" column="31" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="31" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/UserRepository.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
-                  <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+                  <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DirectoryEntity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="275">
+                  <caret line="11" column="28" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="28" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ckb-common/src/main/java/com/ywhk/ckb/common/http/response/BaseResponse.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="337">
-                  <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ckb-common/src/main/java/com/ywhk/ckb/common/threadlocal/ServletThreadLocal.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-200">
-                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ckb-web/src/main/java/com/ywhk/ckb/web/controller/ApiController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="213">
-                  <caret line="39" selection-start-line="39" selection-end-line="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ckb-common/src/main/java/com/ywhk/ckb/common/util/HttpUtils.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ckb-common/src/main/java/com/ywhk/ckb/common/doc/controller/ApiDocController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="e#0#4718#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -199,8 +176,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseListRepository.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+                <state relative-caret-position="175">
+                  <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -208,7 +185,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/DiseaseService.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="275">
@@ -221,14 +198,86 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseTypeRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/MedicineService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DirectoryRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="175">
+                  <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/impl/DiseaseServicelmpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
+                <state relative-caret-position="511">
                   <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#954#955#0" expanded="true" />
                     <element signature="e#1003#1004#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DiseaseListEntity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1325">
+                  <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DiseaseTypeEntity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-32">
+                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/MedSpecRespository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="250">
+                  <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -250,6 +299,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Fname</find>
+      <find>DirectoryID</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -258,8 +308,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ckb-web/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ckb-web/src/main/resources/application-prod.yml" />
         <option value="$PROJECT_DIR$/ckb-common/src/main/java/com/ywhk/ckb/common/threadlocal/ServletThreadLocal.java" />
         <option value="$PROJECT_DIR$/ckb-common/src/main/java/com/ywhk/ckb/common/http/http/response/CommonResponse.java" />
         <option value="$PROJECT_DIR$/ckb-enums/src/main/java/com/ywhk/ckb/enums/http/http/BizResultCode.java" />
@@ -291,7 +339,6 @@
         <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseRepository.java" />
         <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/dto/DiseaseDto.java" />
         <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/dto/DiseaseTypeDto.java" />
-        <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseTypeRepository.java" />
         <option value="$PROJECT_DIR$/ckb-web/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/dto/DiseaseListDto.java" />
         <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DiseaseTypeEntity.java" />
@@ -302,11 +349,16 @@
         <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/DiseaseService.java" />
         <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DirectoryEntity.java" />
         <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/impl/DiseaseServicelmpl.java" />
-        <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/MedicineService.java" />
-        <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DirectoryRepository.java" />
         <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/dto/DirectoryDto.java" />
-        <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/impl/MedicineServiceImpl.java" />
         <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseListRepository.java" />
+        <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DirectoryRepository.java" />
+        <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/MedSpec.java" />
+        <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseTypeRepository.java" />
+        <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/dto/MedSpecDto.java" />
+        <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/MedSpecEntity.java" />
+        <option value="$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/MedSpecRespository.java" />
+        <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/MedicineService.java" />
+        <option value="$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/impl/MedicineServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -322,9 +374,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="688" />
+    <option name="width" value="1239" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
@@ -340,169 +392,6 @@
             <path>
               <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
               <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="threadlocal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinicalknowledgebase" type="462c0819:PsiDirectoryNode" />
-              <item name="ckb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="clinicalknowledgebase" type="b2602c69:ProjectViewProjectNode" />
@@ -680,7 +569,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574301784127" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574329422212" />
     <property name="last_opened_file_path" value="E:/works/wxplatform-back" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -854,12 +743,12 @@
       <workItem from="1574048566805" duration="1285000" />
       <workItem from="1574058990020" duration="11522000" />
       <workItem from="1574072380247" duration="39377000" />
-      <workItem from="1574232076337" duration="14311000" />
+      <workItem from="1574232076337" duration="31053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84619000" />
+    <option name="totallyTimeSpent" value="101361000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -874,7 +763,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -884,8 +773,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.19978517" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2556391" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33942" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
@@ -893,7 +782,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.311493" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.1557465" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -916,49 +805,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加疾病信息相关查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加疾病信息相关查询" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.10.RELEASE/spring-webmvc-5.1.10.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="496" selection-start-line="496" selection-end-line="496" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.10.RELEASE/spring-webmvc-5.1.10.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.10.RELEASE/spring-webmvc-5.1.10.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="441" selection-start-line="441" selection-end-line="441" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.10.RELEASE/spring-webmvc-5.1.10.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="441" selection-start-line="441" selection-end-line="441" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.26/tomcat-embed-websocket-9.0.26.jar!/org/apache/tomcat/websocket/server/WsFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.10.RELEASE/spring-web-5.1.10.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.10.RELEASE/spring-web-5.1.10.RELEASE.jar!/org/springframework/web/filter/FormContentFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1122,36 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DiseaseTypeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DiseaseListEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DirectoryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="55" column="34" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="55" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/dto/DiseaseTypeDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-202">
@@ -1159,52 +980,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/MedicineService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DirectoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/dto/DirectoryDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/impl/MedicineServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseListRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1242,16 +1021,6 @@
           <folding>
             <element signature="e#468#469#0" expanded="true" />
             <element signature="e#513#514#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseTypeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1317,6 +1086,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-web/src/main/java/com/ywhk/ckb/web/CkbWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#689#690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/dto/MedSpecDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DiseaseTypeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DirectoryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/DiseaseListEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/DiseaseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1327,14 +1146,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DirectoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseListRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/DiseaseTypeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/target/classes/com/ywhk/ckb/dao/model/core/MedSpecEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5775">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#30457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/model/core/MedSpecEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/impl/DiseaseServicelmpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
+        <state relative-caret-position="-124">
           <caret line="70" column="96" selection-start-line="70" selection-start-column="82" selection-end-line="70" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#950#951#0" expanded="true" />
             <element signature="e#999#1000#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-dao/src/main/java/com/ywhk/ckb/dao/repository/MedSpecRespository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/MedicineService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckb-service/src/main/java/com/ywhk/ckb/service/impl/MedicineServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
