@@ -1,0 +1,40 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none
+  datasource:
+    name: test
+    url: jdbc:sqlserver://192.168.1.198;DatabaseName=ZL_CWKLDGE
+    username: sa
+    password: 123$%^A
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    druid:
+      maxActive: 4
+      initialSize: 2
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      stat-view-servlet:
+        allow: 127.0.0.1
+        login-username: druid
+        login-password: druid
+      filter:
+        slf4j:
+          enabled: true
+          statement-log-enabled: false
+          statement-executable-sql-log-enable: true
+          statement-sql-pretty-format: true
+      filters: mergeStat,wall,config
+server:
+  port: 4000

@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service;import com.ywhk.ckb.service.dto.DirectoryDto;import org.springframework.stereotype.Service;import java.util.List;@Servicepublic interface MedicineService {    List<DirectoryDto> queryMedType();}
