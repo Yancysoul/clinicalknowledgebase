@@ -1,16 +1,18 @@
 package com.ywhk.ckb.service;
 
+import com.ywhk.ckb.common.http.response.PaginationResponse;
 import com.ywhk.ckb.dao.model.core.UserEntity;
+import com.ywhk.ckb.service.dto.user.*;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
-/**
- * @author: hpy
- * @date: 2019-10-11 15:56
- * @description:
- */
+
 @Service
 public interface UserService {
-    List<UserEntity> queryUserList(UserEntity userEntity);
+    PaginationResponse<QueryUserListResponse> queryUserList(QueryUserListRequest request);
+    SaveUserResponse saveUser(SaveUserRequest request);
+    DelUserResponse delUser (DelUserRequest request);
+
 }

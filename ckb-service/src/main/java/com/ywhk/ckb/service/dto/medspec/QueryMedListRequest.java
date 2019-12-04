@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.medspec;import com.ywhk.ckb.common.doc.annotation.ApiDocElement;import com.ywhk.ckb.common.http.request.PaginationRequest;import lombok.Data;@Datapublic class QueryMedListRequest extends PaginationRequest {    @ApiDocElement("分类")    private Integer directoryID;}

@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.user;import com.ywhk.ckb.common.http.request.PaginationRequest;import lombok.Data;@Datapublic class QueryUserListRequest extends PaginationRequest {}

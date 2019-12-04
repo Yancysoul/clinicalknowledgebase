@@ -1,0 +1,1 @@
+package com.ywhk.ckb.dao.repository;import com.ywhk.ckb.dao.model.core.DifferentialEntity;import org.springframework.data.jpa.repository.JpaRepository;public interface DifferentialRepository extends JpaRepository<DifferentialEntity, Integer> {    DifferentialEntity findByFDifferentialID(Integer id);}

@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.fmelnstitution;import com.ywhk.ckb.common.http.request.PaginationRequest;import lombok.Data;import org.springframework.data.domain.Pageable;@Datapublic class DelFMelnstitutionRequest extends PaginationRequest {    private Integer FMeInstitutionID;}

@@ -4,6 +4,7 @@ import com.ywhk.ckb.common.doc.annotation.ApiDocElement;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 
 @Getter
 @Setter
@@ -15,5 +16,10 @@ public abstract class PaginationRequest extends BaseRequest{
     public PageRequest getPageRequest(){
         //PageRequest第一页从0开始
         return PageRequest.of(this.getCurrentPage()-1,this.getPageSize());
+    }
+
+    public PageRequest getPageRequest(Sort sort){
+        //PageRequest第一页从0开始
+        return PageRequest.of(this.getCurrentPage()-1,this.getPageSize(), sort);
     }
 }

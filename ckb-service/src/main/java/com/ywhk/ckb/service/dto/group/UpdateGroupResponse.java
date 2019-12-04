@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.group;import com.fasterxml.jackson.annotation.JsonIgnoreProperties;import lombok.Data;import java.io.Serializable;@Data@JsonIgnoreProperties(value = { "hibernateLazyInitializer", "handler" })public class UpdateGroupResponse implements Serializable {}

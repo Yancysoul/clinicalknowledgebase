@@ -38,6 +38,14 @@
             <artifactId>mssql-jdbc</artifactId>
         </dependency>
 
+        <!-- pinyin4j-2.5.0 -->
+        <!--<dependency>
+            <groupId>net.sourceforge.pinyin4j</groupId>
+            <artifactId>pinyin4j</artifactId>
+            <version>2.5.0</version>
+        </dependency>-->
+
+
         <dependency>
             <groupId>com.ywhk.ckb</groupId>
             <artifactId>ckb-service</artifactId>

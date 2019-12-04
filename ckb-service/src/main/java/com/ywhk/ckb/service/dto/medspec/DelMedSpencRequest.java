@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.medspec;import com.ywhk.ckb.common.doc.annotation.ApiDocElement;import lombok.Data;@Datapublic class DelMedSpencRequest {    @ApiDocElement("分类")    private Integer FMedSpecID;}

@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.disease;import com.ywhk.ckb.common.doc.annotation.ApiDocElement;import com.ywhk.ckb.common.http.request.PaginationRequest;import lombok.Data;@Datapublic class QueryAllDiseaseRequest extends PaginationRequest {    @ApiDocElement("疾病分类ID")    private Integer FDiseaseTypeID;    @ApiDocElement("疾病名称")    private String FDiseaseName;}

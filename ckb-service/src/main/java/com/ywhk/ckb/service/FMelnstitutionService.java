@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service;import com.ywhk.ckb.dao.model.core.FMelnstitutionEntity;import org.springframework.stereotype.Service;import java.util.List;@Servicepublic interface FMelnstitutionService {    List<FMelnstitutionEntity> queryFMelnstitutionList(String name);    void deleteById(Integer id);    void deleteInBatch(List<FMelnstitutionEntity> list);}

@@ -1,0 +1,1 @@
+package com.ywhk.ckb.dao.repository;import com.ywhk.ckb.dao.model.core.ItemAdviceDetailEntity;import org.springframework.data.jpa.repository.JpaRepository;public interface ItemAdviceDetailRepository extends JpaRepository<ItemAdviceDetailEntity, Integer> {    ItemAdviceDetailEntity findByItemAdviceDetailID(Integer id);}

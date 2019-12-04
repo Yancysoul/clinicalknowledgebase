@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.medspec;import lombok.Data;@Datapublic class DelMedSpencResponse {}

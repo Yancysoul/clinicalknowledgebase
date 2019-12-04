@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.user;import com.ywhk.ckb.common.doc.annotation.ApiDocElement;import lombok.Data;@Datapublic class DelUserRequest {    @ApiDocElement("人员ID")    private Integer FUserid;}

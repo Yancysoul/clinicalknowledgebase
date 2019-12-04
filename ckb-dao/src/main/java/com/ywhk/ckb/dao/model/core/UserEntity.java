@@ -4,48 +4,63 @@ import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
- * @author: hpy
- * @date: 2019-10-11 15:39
- * @description:
+ * 人员
  */
 @Data
 @Entity
-@Table(name = "core_user")
+@Table(name = "SYS_User")
 public class UserEntity {
 
-
     @Id
-    @GenericGenerator(name = "idGenerator", strategy = "uuid")
-    @GeneratedValue(generator = "idGenerator")
-    @Column(name = "FUserId", nullable = false, length = 32)
-    private String FUserId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "Fuserid", nullable = false)
+    private Integer FUserid;
 
-    @Column(name = "FUserName", nullable = false, length = 50)
-    private String FUserName;
+    @Column(name = "Fgroupid", nullable = false)
+    private Integer Fgroupid;
 
-    @Column(name = "FPassWord", nullable = false, length = 50)
-    private String FPassWord;
+    @Column(name = "MechanismID", nullable = false)
+    private Integer MechanismID;
 
-    @Column(name = "FNickName", nullable = false, length = 50)
-    private String FNickName;
+    @Column(name = "FNumber", nullable = false, length = 50)
+    private String FNumber;
 
-    @Column(name = "FSex", nullable = false)
-    private int FSex;
+    @Column(name = "FName", nullable = false, length = 50)
+    private String FName;
 
-    @Column(name = "FAge", nullable = false, length = 10)
-    private String FAge;
+    @Column(name = "FPassword", nullable = false, length = 100)
+    private String FPassword;
 
-    @Column(name = "FHeadImage", nullable = false, length = 225)
-    private String FHeadImage;
+    @Column(name = "FJob", nullable = false, length = 50)
+    private String FJob;
 
-    @Column(name = "FPhone", nullable = false, length = 20)
-    private String FPhone;
+    @Column(name = "FType", nullable = false)
+    private Integer FType;
 
-    @Column(name = "FEmail", nullable = false, length = 50)
-    private String FEmail;
+    @Column(name = "FPy", nullable = false, length = 50)
+    private String FPy;
 
-    @Column(name = "FMark")
-    private boolean FMark;
+    @Column(name = "FWb", nullable = false, length = 50)
+    private String FWb;
+
+    @Column(name = "FExp", nullable = false, length = 200)
+    private String FExp;
+
+    @Column(name = "FMark", nullable = false)
+    private Integer FMark;
+
+    @Column(name = "FCreateDate", nullable = false, length = 8)
+    private Date FCreateDate;
+
+    @Column(name = "FCreateuserID", nullable = false)
+    private Integer FCreateuserID;
+
+    @Column(name = "FModifyDate", nullable = false, length = 8)
+    private Date FModifyDate;
+
+    @Column(name = "FModifyUserID", nullable = false)
+    private Integer FModifyUserID;
 }

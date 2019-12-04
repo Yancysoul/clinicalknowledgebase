@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 
-public interface DiseaseTypeRepository extends JpaRepository<DiseaseTypeEntity, String> {
+public interface DiseaseTypeRepository extends JpaRepository<DiseaseTypeEntity, Integer> {
     List<DiseaseTypeEntity> findByFParentID(Integer id);
 }
