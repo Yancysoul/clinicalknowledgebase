@@ -28,7 +28,7 @@
         <druid.version>1.0.13</druid.version>
         <fastjson.version>1.2.58</fastjson.version>
         <weixin.java.version>3.3.0</weixin.java.version>
-        <hutool.version>4.1.1</hutool.version>
+        <hutool.version>4.1.12</hutool.version>
     </properties>
 
     <dependencyManagement>
