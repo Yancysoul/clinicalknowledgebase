@@ -3,13 +3,18 @@ package com.ywhk.ckb.web.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.ywhk.ckb.common.http.response.BaseResponse;
 import com.ywhk.ckb.common.http.response.CommonResponse;
+import com.ywhk.ckb.common.jwt.annotation.AdminLogin;
+import com.ywhk.ckb.common.jwt.annotation.NoLogin;
 import com.ywhk.ckb.common.threadlocal.ServletThreadLocal;
+import com.ywhk.ckb.common.util.JWTUtils;
 import com.ywhk.ckb.enums.http.CommonResultCode;
+import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -65,12 +70,12 @@ public class ApiController implements ApplicationContextAware {
         Object callResult = null;
         Type[] paramTypes=currentMethod.getGenericParameterTypes();
         try {
-            //检查是否登录
-//            if(!checkLogin(serviceBean,method,request)){
-//                commonResponse.serError(CommonResultCode.NOT_LOGIN);
-//                log.info("调用接口[{}.{}]响应结果：{}",serviceName,method, JSONObject.toJSONString(commonResponse));
-//                return commonResponse;
-//            }
+            //检查是否登录12-24
+            if(!checkLogin(serviceBean,method,request)){
+                commonResponse.serError(CommonResultCode.NOT_LOGIN);
+                log.info("调用接口[{}.{}]响应结果：{}",serviceName,method, JSONObject.toJSONString(commonResponse));
+                return commonResponse;
+            }
 
             //检查是否验签
 //            Sign signAnnotation = getAnnotation(serviceBean,method,Sign.class);
@@ -158,30 +163,31 @@ public class ApiController implements ApplicationContextAware {
      * @param request
      * @return
      */
-//    private boolean checkLogin(Object serviceBean, String method,HttpServletRequest request){
-//        NoLogin noLogin = getAnnotation(serviceBean,method, NoLogin.class);
-//        if(noLogin != null){
-//            return true;
-//        }
-//        String token = request.getHeader("token");
-//        if (StringUtils.isEmpty(token)) {
-//            return false;
-//        }
-//        //验证登录信息是否过期
-//        Claims claims;
-//        try {
-//            claims = JWTUtils.parseJWT(token);
-//        }catch (Exception e){
-//            return false;
-//        }
-//        long expiration = Long.valueOf(claims.get(Claims.EXPIRATION).toString());
-//        if(System.currentTimeMillis()/1000 > expiration){
-//            return false;
-//        }
-//        Object userType = claims.get(JWTUtils.USER_TYPE_KEY);
-//        UserTypeEnum userTypeEnum = UserTypeEnum.valueOfCode(userType.toString());
-//        //验证后端接口是否登录
-//        AdminLogin adminLogin = getAnnotation(serviceBean,method,AdminLogin.class);
+    private boolean checkLogin(Object serviceBean, String method,HttpServletRequest request){
+        NoLogin noLogin = getAnnotation(serviceBean,method, NoLogin.class);
+        if(noLogin != null){
+            return true;
+        }
+        String token = request.getHeader("token");
+        if (StringUtils.isEmpty(token)) {
+            return false;
+        }
+        //验证登录信息是否过期
+        Claims claims;
+        try {
+            claims = JWTUtils.parseJWT(token);
+        }catch (Exception e){
+            return false;
+        }
+        long expiration = Long.valueOf(claims.get(Claims.EXPIRATION).toString());
+        if(System.currentTimeMillis()/1000 > expiration){
+            return false;
+        }
+      //  Object userType = claims.get(JWTUtils.USER_TYPE_KEY);
+      //  UserTypeEnum userTypeEnum = UserTypeEnum.valueOfCode(userType.toString());
+        //验证后端接口是否登录
+        AdminLogin adminLogin = getAnnotation(serviceBean,method,AdminLogin.class);
+
 //        if(adminLogin != null){
 //            if(userTypeEnum == UserTypeEnum.ADMIN_USER){
 //                String userId = (String) claims.get(JWTUtils.USER_ID_KEY);
@@ -191,7 +197,7 @@ public class ApiController implements ApplicationContextAware {
 //                return false;
 //            }
 //        }
-//
+
 //        //验证前端接口是否登录
 //        if(userTypeEnum == UserTypeEnum.WX_USER || userTypeEnum == UserTypeEnum.H5_USER){
 //            String userId = (String) claims.get(JWTUtils.USER_ID_KEY);
@@ -200,7 +206,8 @@ public class ApiController implements ApplicationContextAware {
 //        }else{
 //            return false;
 //        }
-//    }
+        return true;
+    }
 
     /**
      * 获取接口注解

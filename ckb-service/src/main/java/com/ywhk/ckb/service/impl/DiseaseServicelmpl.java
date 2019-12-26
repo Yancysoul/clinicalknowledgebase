@@ -128,7 +128,7 @@ public class DiseaseServicelmpl implements DiseaseService {
      * @return
      */
     @Override
-    public List<DiseaseListEntity> queryDiseaseDetailById (DiseaseListEntity diseaseListEntity) {
+    public DiseaseListEntity queryDiseaseDetailById (DiseaseListEntity diseaseListEntity) {
         return diseaseListRepository.findByFDiseaseID(diseaseListEntity.getFDiseaseID());
     }
 
@@ -155,12 +155,12 @@ public class DiseaseServicelmpl implements DiseaseService {
      */
     @Override
     public DiseaseListEntity updateDiseaseListEntityID(DiseaseListEntity diseaseListEntity) {
-        Integer diseaseListEntityId = diseaseListEntity.getFDiseaseID();
-        DiseaseListEntity oldDiseaseListEntity = diseaseListRepository.findByFDiseaseTypeID(diseaseListEntityId);
-        oldDiseaseListEntity.setFDiseaseID(diseaseListEntity.getFDiseaseID());
-        diseaseListRepository.save(oldDiseaseListEntity);
-        return diseaseListRepository.findByFDiseaseTypeID(diseaseListEntityId);
+        Integer chinaMaladEntityId = diseaseListEntity.getFDiseaseID();
+        diseaseListRepository.save(diseaseListEntity);
+        return (DiseaseListEntity) diseaseListRepository.findByFDiseaseID(chinaMaladEntityId);
     }
+
+
 
     /**
      * 疾病列表删除

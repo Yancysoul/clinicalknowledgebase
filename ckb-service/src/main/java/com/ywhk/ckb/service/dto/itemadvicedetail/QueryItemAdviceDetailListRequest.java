@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.itemadvicedetail;import com.ywhk.ckb.common.http.request.PaginationRequest;import lombok.Data;@Datapublic class QueryItemAdviceDetailListRequest extends PaginationRequest {    private Integer itemAdviceDetailID;    private String FName;}

@@ -3,6 +3,8 @@ package com.ywhk.ckb.service.impl;
 import com.ywhk.ckb.common.http.response.CommonResponse;
 import com.ywhk.ckb.common.http.response.PaginationResponse;
 import com.ywhk.ckb.dao.model.core.UserEntity;
+import com.ywhk.ckb.dao.repository.FMelnstitutionRepository;
+import com.ywhk.ckb.dao.repository.GroupRepostory;
 import com.ywhk.ckb.dao.repository.UserRepository;
 import com.ywhk.ckb.service.UserService;
 import com.ywhk.ckb.service.dto.user.*;
@@ -13,6 +15,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import javax.xml.transform.Result;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -28,6 +31,10 @@ import java.util.Map;
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private GroupRepostory groupRepostory;
+    @Autowired
+    private FMelnstitutionRepository fMelnstitutionRepository;
 
     /**
      * 查询人员列表
@@ -35,16 +42,17 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public PaginationResponse<QueryUserListResponse> queryUserList(QueryUserListRequest request) {
-//        List<UserEntity> userEntities = new ArrayList<>();
-//        userEntities.add(new UserEntity());
-//        userEntities.add(new UserEntity());
-//        log.info(userEntity.getFAge());
-//        return userEntities;
         List<QueryUserListResponse> ret = new ArrayList<>();
         Page<UserEntity> lists = userRepository.findAll(request.getPageRequest());
         lists.getContent().forEach(list -> {
             QueryUserListResponse d = new QueryUserListResponse();
             BeanUtils.copyProperties(list, d);
+            if (list.getFgroupid() != null) {
+                d.setFgroupName(groupRepostory.findByFGROUPID(list.getFgroupid()).getFName());
+            }
+            if (list.getMechanismID() != null) {
+                d.setMechanismName(fMelnstitutionRepository.findByFMeInstitutionID(list.getMechanismID()).getFName());
+            }
             ret.add(d);
         });
         return new PaginationResponse<>(lists, ret);
@@ -68,7 +76,6 @@ public class UserServiceImpl implements UserService {
         } else {
             userEntity = userRepository.findByFUserid(request.getFUserid());
             if (userEntity == null) {
-                System.out.println("当前人员不存在");
                 throw new RuntimeException("当前人员不存在");
             } else {
                 BeanUtils.copyProperties(request, userEntity);
@@ -87,8 +94,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public DelUserResponse delUser (DelUserRequest request) {
         if (StringUtils.isEmpty(request.getFUserid())) {
-            System.out.println("当前人员不存在");
-            return null;
+            throw new NullPointerException("空指针异常");
         }
         userRepository.deleteById(request.getFUserid());
         return new DelUserResponse();

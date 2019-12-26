@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.fmelnstitution;import com.ywhk.ckb.common.doc.annotation.ApiDocElement;import lombok.Data;@Datapublic class StituDetailRequest {    @ApiDocElement("机构ID")    private Integer FMeInstitutionID;}

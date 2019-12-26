@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.itemadvicedetail;import com.ywhk.ckb.common.doc.annotation.ApiDocElement;import lombok.Data;@Datapublic class DelItemAdviceDetailRequest {    @ApiDocElement("人员ID")    private Integer ItemAdviceDetailID;}

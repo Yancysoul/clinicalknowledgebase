@@ -1,1 +1,1 @@
-package com.ywhk.ckb.service.dto.group;import com.ywhk.ckb.common.http.request.PaginationRequest;public class QueryGroupListRequest extends PaginationRequest {}
+package com.ywhk.ckb.service.dto.group;import com.ywhk.ckb.common.http.request.PaginationRequest;import lombok.Data;@Datapublic class QueryGroupListRequest extends PaginationRequest {}

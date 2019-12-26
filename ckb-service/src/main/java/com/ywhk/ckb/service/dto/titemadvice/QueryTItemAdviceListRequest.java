@@ -1,0 +1,1 @@
+package com.ywhk.ckb.service.dto.titemadvice;import com.ywhk.ckb.common.doc.annotation.ApiDocElement;import com.ywhk.ckb.common.http.request.PaginationRequest;import lombok.Data;@Datapublic class QueryTItemAdviceListRequest extends PaginationRequest {    @ApiDocElement("方剂名称")    private String FNAME;}
